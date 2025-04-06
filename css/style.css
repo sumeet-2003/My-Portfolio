@@ -486,6 +486,8 @@ ol {
 .hero__item {
   height: 684px;
   padding-top: 255px;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero__text span {
@@ -523,6 +525,18 @@ ol {
   -webkit-transition: all, 0.7s;
   -o-transition: all, 0.7s;
   transition: all, 0.7s;
+}
+
+@media (max-width: 768px) {
+  .hero__item {
+    background-image: url('../img/hero/hero-bg.jpg') !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__item {
+    background-image: url('../img/hero/hero-bg.png') !important;
+  }
 }
 
 /*---------------------
@@ -568,13 +582,13 @@ ol {
 }
 .work__item .play-btn {
   display: inline-block;
-  color: #ffffff;
+  color: #ffffff00;
   font-size: 20px;
   height: 50px;
   width: 50px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0);
   border-radius: 50%;
 }
 
@@ -1257,12 +1271,12 @@ ol {
   display: inline-block;
   color: #ffffff;
   font-size: 20px;
-  height: 50px;
-  width: 50px;
+  height: 250px;
+  width: 500px;
   line-height: 50px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
+  border: 1px solid rgba(255, 0, 0, 0);
+  
 }
 
 .portfolio__item__text {
